@@ -22,7 +22,8 @@ const PollOptions = () => {
         <button
           key={option.id}
           onClick={() => handleVote(option.id)}
-          className="vote-button"
+          className="vote-button" 
+          style={{ backgroundColor: `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})` }}
         >
           {option.text}
         </button>
